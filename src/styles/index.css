@@ -3,9 +3,21 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+li {
+  margin-top: 5px;
+}
 
 li:hover {
   cursor: pointer;
-  background-color: black;
+  background-color: rgb(0, 44, 175);
   color: white;
+}
+.header {
+  background-color: rgb(0, 44, 175);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+h4 {
+  text-decoration: underline;
 }
