@@ -8,7 +8,11 @@ import { bindActionCreators } from 'redux';
 
 class BookList extends Component {
   render() {
-    let books = 
+    let books = this.props.books.map((book) => {
+      return (
+        <li key={book.id} onClick={() => this.props.selectBook(book)} className="list-group-item">{book.title}</li>
+      )
+    })
     //must create a map function here to return the following:
 
 
@@ -23,9 +27,9 @@ class BookList extends Component {
 
     return (
       <ul className="list-group col-sm-4">
-        {/* return your mapped array list items here */}
+        { books }
       </ul>
-    );
+    )
   }
 }
 

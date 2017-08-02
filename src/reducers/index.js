@@ -2,9 +2,8 @@ import { combineReducers } from 'redux';
 
 import bookList from '../data/books';
 
-const initialState = bookList;
-console.log(initialState);
-//console.log(initialState);
+// const initialState = bookList;
+// console.log(initialState);
 //state argument isnt application state, only state that reducer is responsible for
 
 //STATE = NULL es6 syntax that says if state comes in undefined, it becomes null by default...
@@ -23,7 +22,7 @@ const ActiveBook = (state = null, action) => {
 
 
 const rootReducer = combineReducers({
-  books: initialState,
+  books: bookList,
   activeBook: ActiveBook,
 });
 
